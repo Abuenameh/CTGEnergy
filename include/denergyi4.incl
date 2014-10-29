@@ -1,0 +1,4 @@
+complex<double> denergyi4(int k1, int j1, int i, int j2, int k2, complex<double>** f, double* U, double U0, double* dU, double* J, double mu, complex<double> expth, complex<double> expmth, complex<double> exp2th, complex<double> expm2th) {
+complex<double> dEc =  ( 6.0000000000000000e+00*U[i]+-4.0*mu)/( f[i][4]*~f[i][4]+f[i][2]*~f[i][2]+f[i][0]*~f[i][0]+f[i][1]*~f[i][1]+~f[i][5]*f[i][5]+f[i][3]*~f[i][3])*f[i][4]+1.0/pow( f[i][4]*~f[i][4]+f[i][2]*~f[i][2]+f[i][0]*~f[i][0]+f[i][1]*~f[i][1]+~f[i][5]*f[i][5]+f[i][3]*~f[i][3],2.0)*f[i][4]*( mu*f[i][1]*~f[i][1]-f[i][2]*( U[i]+-2.0*mu)*~f[i][2]-~f[i][5]*( 1.0000000000000000e+01*U[i]+-5.0*mu)*f[i][5]-( 6.0000000000000000e+00*U[i]+-4.0*mu)*f[i][4]*~f[i][4]-f[i][3]*~f[i][3]*( 3.0000000000000000e+00*U[i]+-3.0*mu));
+return dEc;
+}
